@@ -45,14 +45,22 @@ for customer in queueCustomer:
     else:
         dictCustomer[customer.name] = customer.myOrder.burger_count
 
-# print(dictCustomer)
+
+for qCustomer in range (len(queueCustomer)):
+    queueCustomer.pop(0)
+
+
+#print(dictCustomer)
 # You can use a statement similar to: listSortedCustomers = sorted(dictCustomers.items(), key=lambda x: x[1], reverse=True) 
 listSortedCustomers = sorted(dictCustomer.items(), key=lambda x:x[1],reverse=True)
 
-print("\n\n") 
+print("\n") 
 #print(listSortedCustomers)
 
 for customer in listSortedCustomers :
     custName = customer [0]
     iBurgerCount = customer [1]
     print ((custName).ljust(30) + str(iBurgerCount) + "\n")
+
+
+#print(queueCustomer)
