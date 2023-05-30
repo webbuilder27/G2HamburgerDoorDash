@@ -1,8 +1,5 @@
-#Dawn Smith
+#Team 2- Dawn Smith, 
 #Burger Order
-
-# hi
-# this is a test
 
 import random
 
